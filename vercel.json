@@ -2,15 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "generate-nightly.sh",
-      "use": "@vercel/static-build",
-      "buildCommand": "bash generate-nightly.sh"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "public/**/*",
+      "use": "@vercel/static-build"
     }
   ]
 }
